@@ -3,16 +3,15 @@ import logo from "../../public/images/logo.svg";
 
 export default function Logo({ className }: { className?: string }) {
     const handleLogoClick = () => {
-        window.location.replace("/#");
+        window.location.replace("/");
     }
     return (
         <svg
             width="90"
             height="67.96"
             viewBox="0 0 178 135"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className={"fill-none stroke-white " + className}
+            className={"fill-none stroke-[#AAAAAA] " + className}
             onClick={handleLogoClick} >
 
             <path

@@ -2,24 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  width: 100vw;
-}
-
 body {
-  width: 100%;
-  height: 100%;
   background-color: black;
   background-image: url("../../public/images/backgroundImage.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   overflow-x: hidden;
-}
-
-.quick-card{
-  background: linear-gradient( #C8A3FF, #825EB7);
-  border-radius: 0.25rem;
-  border-width: 0.1rem;
-  overflow: auto;
 }

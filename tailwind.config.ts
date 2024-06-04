@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        "jetbrains": ["var(--font-jetbrains)", "monospace"]
+        "jetbrains": ["var(--font-jetbrains)"],
+        "roboto": ["var(--font-roboto)"]
       }
     },
   },
