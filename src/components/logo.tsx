@@ -11,7 +11,7 @@ export default function Logo({ className }: { className?: string }) {
             height="67.96"
             viewBox="0 0 178 135"
             xmlns="http://www.w3.org/2000/svg"
-            className={"fill-none stroke-[#AAAAAA] " + className}
+            className={"fill-none stroke-white " + className}
             onClick={handleLogoClick} >
 
             <path

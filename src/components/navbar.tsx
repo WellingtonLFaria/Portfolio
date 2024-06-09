@@ -1,13 +1,14 @@
 import Logo from "./logo";
+import Navlink from "./navlink";
 
 export default function Navbar() {
     return (
-        <nav className="p-3 text-xl flex justify-between items-center font-jetbrains ">
+        <nav className="p-3 text-xl flex justify-between items-center font-jetbrains text-white">
             <Logo className="w-20 hover:stroke-[#F2283C] hover:scale-110 transition-all ease-in-out cursor-pointer"/>
             <div className="gap-4 flex">
-                <a href="/about" className="hover:text-[#875AFB] hover:scale-110 transition-all ease-in-out">About</a>
-                <a href="/projects" className="hover:text-[#875AFB] hover:scale-110 transition-all ease-in-out">Projects</a>
-                <a href="/contact" className="hover:text-[#875AFB] hover:scale-110 transition-all ease-in-out">Contact</a>
+                <Navlink href="/about">About</Navlink>
+                <Navlink href="/projects">Projects</Navlink>
+                <Navlink href="/contact">Contact</Navlink>
             </div>
         </nav>
     );
