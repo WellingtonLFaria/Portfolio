@@ -5,6 +5,6 @@ type Props = {
 
 export default function Subtitulo({children, className}: Props) {
     return (
-        <h2 className={`text-3xl xl:text-6xl font-jetbrains text-[#F2283C] ${className}`}>{children}</h2>
+        <h2 className={`text-3xl xl:text-3xl 2xl:text-6xl font-jetbrains text-[#F2283C] ${className}`}>{children}</h2>
     )
 }

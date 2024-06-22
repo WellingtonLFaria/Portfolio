@@ -23,7 +23,7 @@ export default function Home() {
             <main className="px-10 pt-5 gap-5 h-5/6 flex flex-col justify-center md:w-3/4 md:m-auto">
                 <div className="gap-3 flex flex-col">
                     <Subtitulo>Hi, my name is</Subtitulo>
-                    <h1 className="text-5xl xl:text-9xl text-white">Wellington Luiz de Faria</h1>
+                    <h1 className="text-5xl xl:text-6xl 2xl:text-9xl text-white">Wellington Luiz de Faria</h1>
                     <Titulo>Software Developer</Titulo>
                 </div>
                 <div className="gap-3 xl:gap-3 flex flex-col">

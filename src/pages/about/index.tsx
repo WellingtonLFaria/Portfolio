@@ -27,12 +27,12 @@ export default function About() {
                     <Paragrafo>I'm currently studying Multiplatform Software Development at Fatec São José dos Campos - Prof. Jessen Vida, with the aim of developing my Software Development skills and growing as a professional.</Paragrafo>
                     <Paragrafo>Here are a few technologies I’ve been working with recently:</Paragrafo>
                     <div className="flex flex-wrap justify-between text-[#875AFB] font-jetbrains">
-                        <ul className="list-disc list-inside text-2xl xl:text-4xl">
+                        <ul className="list-disc list-inside text-2xl 2xl:text-4xl">
                             <li>Java</li>
                             <li>SpringBoot</li>
                             <li>NextJS</li>
                         </ul>
-                        <ul className="list-disc list-inside text-2xl xl:text-4xl">
+                        <ul className="list-disc list-inside text-2xl 2xl:text-4xl">
                             <li>React</li>
                             <li>JavaScript</li>
                             <li>TypeScript</li>

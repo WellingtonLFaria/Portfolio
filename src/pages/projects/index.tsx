@@ -20,7 +20,7 @@ const roboto = Roboto({
 export default function Projects() {
     return (
         <Page screen={false}>
-            <main className="p-10 gap-5 h-5/6 flex flex-col justify-center md:w-3/4 md:m-auto">
+            <main className="p-10 gap-5 h-5/6 flex flex-col justify-center md:w-5/6 md:m-auto">
                 <Titulo>Projects</Titulo>
                 <div id="projects" className="flex flex-col gap-10 text-xl">
                     {projects.map(project => (
