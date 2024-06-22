@@ -20,13 +20,13 @@ const roboto = Roboto({
 export default function Home() {
     return (
         <Page>
-            <main className="px-10 gap-5 h-5/6 flex flex-col justify-center md:w-3/4 md:m-auto">
+            <main className="px-10 pt-5 gap-5 h-5/6 flex flex-col justify-center md:w-3/4 md:m-auto">
                 <div className="gap-3 flex flex-col">
                     <Subtitulo>Hi, my name is</Subtitulo>
-                    <h1 className="text-5xl text-white">Wellington Luiz de Faria</h1>
+                    <h1 className="text-5xl xl:text-9xl text-white">Wellington Luiz de Faria</h1>
                     <Titulo>Software Developer</Titulo>
                 </div>
-                <div className="gap-3 text-xl xl:gap-3 xl:text-2xl flex flex-col">
+                <div className="gap-3 xl:gap-3 flex flex-col">
                     <Paragrafo>Currently studying Multiplatform Software Development at Fatec São José dos Campos - Prof. Jessen Vidal.</Paragrafo>
                     <Paragrafo>I have been developing since 2018 when I discovered the area of ​​software development, and now studying higher education I am looking to improve my skills to grow as a developer and professional.</Paragrafo>
                 </div>

@@ -13,12 +13,13 @@ const roboto = Roboto({
 });
 
 type Props = {
-    children: any
+    children: any,
+    screen?: boolean
 }
 
-export default function Page({ children }: Props) {
+export default function Page({ children, screen = true }: Props) {
     return (
-        <div className={`${jetbrains_mono.variable} ${roboto.variable} font-roboto h-screen`}>
+        <div className={`${jetbrains_mono.variable} ${roboto.variable} font-roboto ${screen ? "h-screen" : ""}`}>
             <Navbar />
             {children}
         </div>
