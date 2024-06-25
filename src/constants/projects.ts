@@ -16,7 +16,7 @@ export const projects: Project[] = [
         anoSemestre: "2023-1",
         academicPartner: "Vanguarda",
         description: 'For Rede Vanguarda journalists who wish to access, view and analyze COVID Longa data, "Data-SARS" is a website that allows easy access to information related to COVID Longa. Unlike some sites that propagate Fake News and that do not have search filters, our product provides data in a way that is easy to understand and analyze, since our data is authentic and we have a minimalist interaction area.',
-        personalContributions: "In this project I developed most of the Back-end which was made in Flask, I was responsible for the entire data scraping process which was carried out using the Selenium library, I was also responsible for the graphs made using ChartJS.",
+        personalContributions: "In this project I acted as dev, developed most of the Back-end which was done in Flask, I was responsible for the entire data scraping process which was done using the Selenium library, I was also responsible for the charts made using ChartJS. DataSars was my first development experience in a development team, and with the agile Scrum methodology, so several difficulties arose during the development of the project, including lack of communication with the team, lack of organization, lack of knowledge, sometimes the team seemed lost and not knowing which way to go to continue the project, taking into account that I was not the only one who was adapting to this way of working in a team, the project as a whole was very disorganized, but in the end everything went well and we managed to deliver a good project.",
         technologies: [
             "GIT",
             "Python",
@@ -70,7 +70,7 @@ export const projects: Project[] = [
         anoSemestre: "2024-1",
         academicPartner: "Youtan",
         description: "The project aims to solve problems in asset management control of any companies that use the system. In this sense, the application must contain interfaces for monitoring, registration and control over assets, also providing options for their delegation and manipulation. Above all, it is also crucial to generate indicator reports, issue notifications regarding the status of the asset and register recipient users for the assets.",
-        personalContributions: "In this project I developed a large part of the Back-end made in Java with SpringBoot, I also carried out a large part of the integration of the Front-end with the Back-end, I also developed some Front-end pages.",
+        personalContributions: "In this project, I acted as the Scrum Master, developed several API endpoints in Java using SpringBoot, and also handled the integration of Front-end pages with Back-end endpoints. My biggest challenge in this project was assuming the role of Scrum Master for the first time. During the initial two sprints, I struggled significantly to gather the team and identify the issues they were facing, as communication has always been one of my weaker areas. Another challenge I encountered early on was starting the project development using a project management platform with which I wasn't familiar. This made it difficult for the team to track the project's progress. By the second sprint, I switched to a different project management platform that both the team and I felt more comfortable using.",
         technologies: [
             "GIT",
             "HTML",
