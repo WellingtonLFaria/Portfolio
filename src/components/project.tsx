@@ -16,7 +16,7 @@ type Props = {
 
 export default function Project({project}: Props) {
     return (
-        <div className="project text-white font-jetbrains flex flex-col gap-5">
+        <div className="project text-white font-jetbrains flex flex-col gap-10">
             <h4 className="text-3xl 2xl:text-5xl"><a href={project.link} target="_blank" className="text-indigo-500 hover:underline">{project.name} - {project.anoSemestre}</a></h4>
             <div>
             <h5 className="text-2xl 2xl:text-4xl mb-2">Academic partner:</h5>

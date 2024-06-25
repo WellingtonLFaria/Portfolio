@@ -44,7 +44,7 @@ export const projects: Project[] = [
         anoSemestre: "2023-2",
         academicPartner: "FATEC",
         description: 'For companies looking to implement solutions for managing service calls, "CallGenie" is a CRUD system that allows better management of calls, with a minimalist interaction area and documents that help the user to use the system. In this project, we implemented the system for a fictitious computer store, however, our system can be implemented in any area, as long as there is difficulty in managing calls.',
-        personalContributions: "In this project I developed much of the Back-end using Express and helped integrate the Front-end with the Back-end.",
+        personalContributions: "In this project, I developed much of the back-end using Express and assisted in integrating the front-end with the back-end. The main difficulty of the project was primarily related to a lack of knowledge of the adopted technologies in the solution, which delayed me significantly and also slowed down the team.",
         technologies: [
             "GIT",
             "HTML",
