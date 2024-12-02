@@ -28,8 +28,8 @@ export default function About() {
                     <Paragrafo>Here are a few technologies I’ve been working with recently:</Paragrafo>
                     <div className="flex flex-wrap justify-between text-[#875AFB] font-jetbrains">
                         <ul className="list-disc list-inside text-2xl 2xl:text-4xl">
-                            <li>Java</li>
-                            <li>SpringBoot</li>
+                            <li>Django</li>
+                            <li>Python</li>
                             <li>NextJS</li>
                         </ul>
                         <ul className="list-disc list-inside text-2xl 2xl:text-4xl">
