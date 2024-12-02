@@ -96,7 +96,7 @@ export const projects: Project[] = [
         anoSemestre: "2024-2",
         academicPartner: "Tecsus",
         description: "The project aims to create a monitoring system for low-cost weather stations, recording data from sensors such as wind, rain, humidity, temperature and pressure. The system will store history for reports and dashboards and send alerts for anomalous readings. It will be adaptable to new sensors and will include mathematical explanations of the calculations involved.",
-        personalContributions: "In this project, I worked on the development of endpoints in the backend, using Django ORM to manage interaction with the database. I created the Consumer service responsible for receiving, processing and storing data sent by weather stations. Furthermore, I developed the embedded system that integrates the sensors and enables data collection at the stations.",
+        personalContributions: "In this project, I contribute to the development of endpoints in the backend, using Django ORM to manage interaction with the database efficiently. We have also developed a consumer service responsible for receiving, processing and storing data transmitted by railway stations. At the same time, I created the embedded system that integrates the sensors, enabling data collection directly at the stations. Furthermore, I worked on the DevOps team, where guidelines and flows were defined for carrying out integration tests, which was the biggest difficulty faced throughout the project.",
         technologies: [
             "GIT",
             "CSS",
