@@ -101,6 +101,7 @@ export const projects: Project[] = [
             "GIT",
             "CSS",
             "TailwindCSS",
+            "NextJS",
             "HighCharts",
             "React",
             "TypeScript",
