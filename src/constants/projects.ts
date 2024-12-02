@@ -90,5 +90,31 @@ export const projects: Project[] = [
             "Time management"
         ],
         link: "https://github.com/Grupo-Syntax-Squad/AssetBox"
+    },
+    {
+        name: "Tupã",
+        anoSemestre: "2024-2",
+        academicPartner: "Tecsus",
+        description: "The project aims to create a monitoring system for low-cost weather stations, recording data from sensors such as wind, rain, humidity, temperature and pressure. The system will store history for reports and dashboards and send alerts for anomalous readings. It will be adaptable to new sensors and will include mathematical explanations of the calculations involved.",
+        personalContributions: "In this project, I worked on the development of endpoints in the backend, using Django ORM to manage interaction with the database. I created the Consumer service responsible for receiving, processing and storing data sent by weather stations. Furthermore, I developed the embedded system that integrates the sensors and enables data collection at the stations.",
+        technologies: [
+            "GIT",
+            "CSS",
+            "TailwindCSS",
+            "HighCharts",
+            "React",
+            "TypeScript",
+            "Django",
+            "Python"
+        ],
+        softSkills: [
+            "Planning",
+            "Work under pressure"
+        ],
+        whatCanImprove: [
+            "Planning",
+            "Time management"
+        ],
+        link: "https://github.com/Grupo-Syntax-Squad/Tupan"
     }
 ]
