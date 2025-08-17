@@ -155,7 +155,7 @@
     (f.tu = function (e) {
       return f.tt().createScriptURL(e)
     }),
-    (f.p = "/_next/"),
+    (f.p = "/Portfolio/_next/"),
     (o = { 272: 0, 308: 0 }),
     (f.f.j = function (e, t) {
       var n = f.o(o, e) ? o[e] : void 0

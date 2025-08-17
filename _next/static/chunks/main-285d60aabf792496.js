@@ -473,7 +473,7 @@
           (h = o.defaultLocale)
         let t = o.assetPrefix || ""
         if (
-          (self.__next_set_public_path__("" + t + "/_next/"),
+          (self.__next_set_public_path__("" + t + "/Portfolio/_next/"),
           (0, w.setConfig)({
             serverRuntimeConfig: {},
             publicRuntimeConfig: o.runtimeConfig || {},
@@ -987,7 +987,10 @@
               (0, c.removeTrailingSlash)((0, u.addLocale)(e, n)),
               ".json"
             )
-            return (0, o.addBasePath)("/_next/data/" + this.buildId + t + p, !0)
+            return (0, o.addBasePath)(
+              "/Portfolio/_next/data/" + this.buildId + t + p,
+              !0
+            )
           })(
             e.skipInterpolation
               ? h
@@ -1426,7 +1429,7 @@
       function h(e, t) {
         return p().then((r) => {
           if (!(t in r)) throw l(Error("Failed to lookup route: " + t))
-          let o = r[t].map((t) => e + "/_next/" + encodeURI(t))
+          let o = r[t].map((t) => e + "/Portfolio/_next/" + encodeURI(t))
           return {
             scripts: o
               .filter((e) => e.endsWith(".js"))
@@ -2966,7 +2969,7 @@
         n = {
           deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
           imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-          path: "/_next/image",
+          path: "/Portfolio/_next/image",
           loader: "default",
           loaderFile: "",
           domains: [],
@@ -4726,7 +4729,7 @@
             (t = (0, n.removeTrailingSlash)(t)),
           e.buildId &&
             (t = (0, a.addPathSuffix)(
-              (0, o.addPathPrefix)(t, "/_next/data/" + e.buildId),
+              (0, o.addPathPrefix)(t, "/Portfolio/_next/data/" + e.buildId),
               "/" === e.pathname ? "index.json" : ".json"
             )),
           (t = (0, o.addPathPrefix)(t, e.basePath)),
@@ -4848,11 +4851,11 @@
           (c.basePath = u))
         let f = c.pathname
         if (
-          c.pathname.startsWith("/_next/data/") &&
+          c.pathname.startsWith("/Portfolio/_next/data/") &&
           c.pathname.endsWith(".json")
         ) {
           let e = c.pathname
-              .replace(/^\/_next\/data\//, "")
+              .replace(/^\/Portfolio\/_next\/data\//, "")
               .replace(/\.json$/, "")
               .split("/"),
             r = e[0]
