@@ -4,7 +4,7 @@ const nextConfig = {
   output: "export",
   basePath: isProd ? "/Portfolio" : "",
   assetPrefix: isProd ? "/Portfolio/" : "",
-  generateBuildId: async () => "static",
+  trailingSlash: true,
 }
 
 export default nextConfig
