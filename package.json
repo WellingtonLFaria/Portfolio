@@ -6,10 +6,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "cross-env NODE_ENV=production next build",
+    "postbuild": "node replacer.js",
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "deploy": "cross-env NODE_ENV=production next build && shx touch out/.nojekyll && gh-pages -d out"
+    "deploy": "cross-env NODE_ENV=production npm run build && npm run postbuild && shx touch out/.nojekyll && gh-pages -d out"
   },
   "dependencies": {
     "next": "14.2.3",
@@ -23,6 +24,7 @@
     "cross-env": "^10.0.0",
     "gh-pages": "^6.3.0",
     "postcss": "^8",
+    "replace-in-file": "^8.3.0",
     "shx": "^0.4.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
