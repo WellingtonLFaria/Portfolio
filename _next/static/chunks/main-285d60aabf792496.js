@@ -531,7 +531,7 @@
                             640, 750, 828, 1080, 1200, 1920, 2048, 3840,
                           ],
                           imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-                          path: "/Portfolio/_next/image/",
+                          path: "/Portfolio/Portfolio/_next/image/",
                           loader: "default",
                           dangerouslyAllowSVG: !1,
                           unoptimized: !1,
