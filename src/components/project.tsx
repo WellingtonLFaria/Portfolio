@@ -29,25 +29,25 @@ export default function Project({ project }: Props) {
         </Link>
       </h4>
       <div>
-        <h5 className="text-2xl 2xl:text-4xl mb-2">Academic partner:</h5>
+        <h5 className="text-2xl 2xl:text-4xl mb-2">Parceiro acadêmico:</h5>
         <p className="font-roboto text-xl 2xl:text-3xl">
           {project.academicPartner}
         </p>
       </div>
       <div>
-        <h5 className="text-2xl 2xl:text-4xl mb-2">Project's goal:</h5>
+        <h5 className="text-2xl 2xl:text-4xl mb-2">Objetivo do projeto:</h5>
         <p className="font-roboto text-xl 2xl:text-3xl">
           {project.description}
         </p>
       </div>
       <div>
-        <h5 className="text-2xl 2xl:text-4xl mb-2">Personal contributions:</h5>
+        <h5 className="text-2xl 2xl:text-4xl mb-2">Minhas contribuições:</h5>
         <p className="font-roboto text-xl 2xl:text-3xl">
           {project.personalContributions}
         </p>
       </div>
       <div>
-        <h5 className="text-2xl 2xl:text-4xl mb-2">Technologies:</h5>
+        <h5 className="text-2xl 2xl:text-4xl mb-2">Tecnologias:</h5>
         <ul className="text-xl 2xl:text-3xl list-disc list-inside flex flex-col xl:h-28 flex-wrap">
           {project.technologies.map((technologie) => (
             <li>{technologie}</li>
@@ -56,7 +56,7 @@ export default function Project({ project }: Props) {
       </div>
       <div>
         <h5 className="text-2xl 2xl:text-4xl mb-2">
-          Soft Skills that I developed during the project:
+          Soft Skills que eu desenvolvi durante o projeto:
         </h5>
         <ul className="text-xl 2xl:text-3xl list-disc list-inside">
           {project.softSkills.map((softSkill) => (
@@ -66,7 +66,7 @@ export default function Project({ project }: Props) {
       </div>
       <div>
         <h5 className="text-2xl 2xl:text-4xl mb-2">
-          What can be improved for the next project:
+          O que pode melhorar para o próximo projeto:
         </h5>
         <ul className="text-xl 2xl:text-3xl list-disc list-inside">
           {project.whatCanImprove.map((whatCanImprov) => (
