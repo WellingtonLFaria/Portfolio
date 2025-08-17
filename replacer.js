@@ -1,28 +1,32 @@
 import fs from "fs"
 import path from "path"
 
-const basePath = "/Portfolio"
-const outDir = path.resolve("out")
+// Caminhos
+const outDir = path.resolve("./out")
+const portfolioDir = path.join(outDir, "Portfolio")
+const nextSrc = path.join(outDir, "_next")
+const nextDest = path.join(portfolioDir, "_next")
 
-function getAllHtmlFiles(dir) {
-  let results = []
-  const list = fs.readdirSync(dir)
-  list.forEach((file) => {
-    const filePath = path.join(dir, file)
-    const stat = fs.statSync(filePath)
-    if (stat && stat.isDirectory()) {
-      results = results.concat(getAllHtmlFiles(filePath))
-    } else if (file.endsWith(".html")) {
-      results.push(filePath)
+fs.mkdirSync(nextDest, { recursive: true })
+
+fs.readdirSync(nextSrc).forEach((file) => {
+  fs.renameSync(path.join(nextSrc, file), path.join(nextDest, file))
+})
+
+function updateHTMLLinks(dir) {
+  const files = fs.readdirSync(dir)
+  for (const file of files) {
+    const fullPath = path.join(dir, file)
+    const stat = fs.statSync(fullPath)
+    if (stat.isDirectory()) {
+      updateHTMLLinks(fullPath)
+    } else if (fullPath.endsWith(".html")) {
+      let content = fs.readFileSync(fullPath, "utf-8")
+      content = content.replace(/\/_next\//g, "/Portfolio/_next/")
+      fs.writeFileSync(fullPath, content, "utf-8")
+      console.log(`✅ Atualizado: ${fullPath}`)
     }
-  })
-  return results
+  }
 }
 
-getAllHtmlFiles(outDir).forEach((file) => {
-  let content = fs.readFileSync(file, "utf8")
-  content = content.replace(/href="\/_next/g, `href="${basePath}/_next`)
-  content = content.replace(/src="\/_next/g, `src="${basePath}/_next`)
-  fs.writeFileSync(file, content, "utf8")
-  console.log(`✅ Ajustado: ${file}`)
-})
+updateHTMLLinks(outDir)

@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://WellingtonLFaria.github.io/Portfolio",
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "cross-env NODE_ENV=production next build",
     "postbuild": "node replacer.js && shx touch out/.nojekyll",
-    "deploy": "npm run build && npm run postbuild && gh-pages -d out",
+    "deploy": "npm run build && gh-pages -d out",
     "start": "next start",
     "lint": "next lint",
     "export": "next export"
