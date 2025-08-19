@@ -122,3 +122,5 @@ export const projects: Project[] = [
     link: "https://github.com/Grupo-Syntax-Squad/Tupan",
   },
 ]
+
+export const projectsReversed: Project[] = [...projects].reverse()

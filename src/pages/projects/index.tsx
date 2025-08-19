@@ -2,8 +2,8 @@ import "@/app/globals.css"
 import Navbar from "@/components/navbar"
 import Page from "@/components/page"
 import Project from "@/components/project"
-import Titulo from "@/components/titulo"
-import { projects } from "@/constants/projects"
+import Title from "@/components/title"
+import { projects, projectsReversed } from "@/constants/projects"
 import { JetBrains_Mono, Roboto } from "next/font/google"
 
 const jetbrains_mono = JetBrains_Mono({
@@ -21,10 +21,10 @@ export default function Projects() {
   return (
     <Page screen={false}>
       <main className="p-10 gap-5 h-5/6 flex flex-col justify-center md:w-5/6 md:m-auto">
-        <Titulo>Projetos</Titulo>
+        <Title>Projetos</Title>
         <div id="projects" className="flex flex-col gap-10 text-xl">
-          {projects.map((project) => (
-            <Project project={project} />
+          {projectsReversed.map((project) => (
+            <Project project={project} key={project.name} />
           ))}
         </div>
       </main>

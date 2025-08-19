@@ -1,8 +1,8 @@
 import "@/app/globals.css"
 import Navbar from "@/components/navbar"
 import Page from "@/components/page"
-import Paragrafo from "@/components/paragrafo"
-import Titulo from "@/components/titulo"
+import Paragraph from "@/components/paragraph"
+import Title from "@/components/title"
 import { JetBrains_Mono, Roboto } from "next/font/google"
 import Link from "next/link"
 
@@ -21,9 +21,8 @@ export default function Contact() {
   return (
     <Page>
       <main className="px-10 gap-5 h-5/6 flex flex-col justify-center md:w-3/4 md:m-auto">
-        <Titulo>Contato</Titulo>
+        <Title>Contato</Title>
         <div className="text-xl flex flex-col gap-5">
-          <Paragrafo>Minhas redes sociais:</Paragrafo>
           <ul className="text-white text-2xl 2xl:text-3xl">
             <li className="hover:text-[#875AFB] hover:ml-3 transition-all ease-in-out">
               <Link

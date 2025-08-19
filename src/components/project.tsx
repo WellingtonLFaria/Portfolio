@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Paragraph from "./paragraph"
 
 interface ProjectData {
   name: string
@@ -18,8 +19,8 @@ type Props = {
 
 export default function Project({ project }: Props) {
   return (
-    <div className="project text-white font-jetbrains flex flex-col gap-10">
-      <h4 className="text-3xl 2xl:text-5xl">
+    <div className="text-white font-jetbrains flex flex-col gap-4">
+      <ProjectName>
         <Link
           href={project.link}
           target="_blank"
@@ -27,53 +28,63 @@ export default function Project({ project }: Props) {
         >
           {project.name} - {project.anoSemestre}
         </Link>
-      </h4>
+      </ProjectName>
       <div>
-        <h5 className="text-2xl 2xl:text-4xl mb-2">Parceiro acadêmico:</h5>
-        <p className="font-roboto text-xl 2xl:text-3xl">
-          {project.academicPartner}
-        </p>
+        <ProjectTopic>Parceiro acadêmico:</ProjectTopic>
+        <Paragraph>{project.academicPartner}</Paragraph>
       </div>
       <div>
-        <h5 className="text-2xl 2xl:text-4xl mb-2">Objetivo do projeto:</h5>
-        <p className="font-roboto text-xl 2xl:text-3xl">
-          {project.description}
-        </p>
+        <ProjectTopic>Objetivo do projeto:</ProjectTopic>
+        <Paragraph>{project.description}</Paragraph>
       </div>
       <div>
-        <h5 className="text-2xl 2xl:text-4xl mb-2">Minhas contribuições:</h5>
-        <p className="font-roboto text-xl 2xl:text-3xl">
-          {project.personalContributions}
-        </p>
+        <ProjectTopic>Minhas contribuições:</ProjectTopic>
+        <Paragraph>{project.personalContributions}</Paragraph>
       </div>
       <div>
-        <h5 className="text-2xl 2xl:text-4xl mb-2">Tecnologias:</h5>
-        <ul className="text-xl 2xl:text-3xl list-disc list-inside flex flex-col xl:h-28 flex-wrap">
-          {project.technologies.map((technologie) => (
-            <li>{technologie}</li>
-          ))}
-        </ul>
+        <ProjectTopic>Tecnologias:</ProjectTopic>
+        <List elements={project.technologies} />
       </div>
       <div>
-        <h5 className="text-2xl 2xl:text-4xl mb-2">
+        <ProjectTopic>
           Soft Skills que eu desenvolvi durante o projeto:
-        </h5>
-        <ul className="text-xl 2xl:text-3xl list-disc list-inside">
-          {project.softSkills.map((softSkill) => (
-            <li>{softSkill}</li>
-          ))}
-        </ul>
+        </ProjectTopic>
+        <List elements={project.softSkills} />
       </div>
       <div>
-        <h5 className="text-2xl 2xl:text-4xl mb-2">
-          O que pode melhorar para o próximo projeto:
-        </h5>
-        <ul className="text-xl 2xl:text-3xl list-disc list-inside">
-          {project.whatCanImprove.map((whatCanImprov) => (
-            <li>{whatCanImprov}</li>
-          ))}
-        </ul>
+        <ProjectTopic>O que pode melhorar para o próximo projeto:</ProjectTopic>
+        <List elements={project.whatCanImprove} />
       </div>
     </div>
+  )
+}
+
+interface ProjectNameProps {
+  children: JSX.Element
+}
+
+function ProjectName({ children }: ProjectNameProps) {
+  return <h4 className="text-2xl 2xl:text-4xl">{children}</h4>
+}
+
+interface ProjectTopicProps {
+  children: JSX.Element | string
+}
+
+function ProjectTopic({ children }: ProjectTopicProps) {
+  return <h5 className="text-xl 2xl:text-2xl mb-2">{children}</h5>
+}
+
+interface ListProps {
+  elements: string[]
+}
+
+function List({ elements }: ListProps) {
+  return (
+    <ul className="text-xl 2xl:text-2xl list-disc list-inside">
+      {elements.map((element) => (
+        <li key={element}>{element}</li>
+      ))}
+    </ul>
   )
 }
