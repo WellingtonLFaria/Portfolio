@@ -1,5 +1,4 @@
 import Link from "next/link"
-import logo from "../../public/images/logo.svg"
 
 export default function Logo({ className }: { className?: string }) {
   return (

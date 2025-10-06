@@ -1,13 +1,23 @@
+interface ExperiencePeriod {
+  role: string
+  start: string
+  end?: string
+}
+
 interface Project {
   name: string
-  anoSemestre: string
-  academicPartner: string
+  type: "academic" | "professional"
   description: string
-  personalContributions: string
-  technologies: string[]
-  softSkills: string[]
-  whatCanImprove: string[]
-  link: string
+  link?: string
+
+  anoSemestre?: string
+  academicPartner?: string
+  personalContributions?: string
+  technologies?: string[]
+  softSkills?: string[]
+  whatCanImprove?: string[]
+
+  periods?: ExperiencePeriod[]
 }
 
 interface NavbarLink {
@@ -53,6 +63,7 @@ export const projects: Project[] = [
       "Comunicação",
     ],
     link: "https://github.com/Grupo-Syntax-Squad/API",
+    type: "academic",
   },
   {
     name: "CallGenie",
@@ -75,6 +86,7 @@ export const projects: Project[] = [
     softSkills: ["Adaptabilidade", "Capacidade de resolver problemas"],
     whatCanImprove: ["Planejamento", "Comunicação"],
     link: "https://github.com/Grupo-Syntax-Squad/CallGenie",
+    type: "academic",
   },
   {
     name: "AssetBox",
@@ -97,6 +109,7 @@ export const projects: Project[] = [
     softSkills: ["Planejamento", "Trabalho sob pressão"],
     whatCanImprove: ["Planejamento", "Gestão de tempo"],
     link: "https://github.com/Grupo-Syntax-Squad/AssetBox",
+    type: "academic",
   },
   {
     name: "Tupã",
@@ -120,6 +133,35 @@ export const projects: Project[] = [
     softSkills: ["Planejamento", "Trabalho sob pressão"],
     whatCanImprove: ["Planejamento", "Gestão de tempo"],
     link: "https://github.com/Grupo-Syntax-Squad/Tupan",
+    type: "academic",
+  },
+  {
+    name: "Desenvolvedor de Software - Tecsus",
+    description:
+      "Atuo no desenvolvimento e manutenção de aplicações web voltadas à gestão de dados e automação de processos, com foco em performance, escalabilidade e qualidade de código. Contribuo para a evolução contínua do ecossistema da empresa, participando desde a implementação de novas funcionalidades até a integração entre sistemas e serviços internos.",
+    personalContributions:
+      "Criação de endpoints, integração de APIs e realização de testes.",
+    technologies: [
+      "Python",
+      "FastAPI",
+      "Typescript",
+      "React",
+      "PostgreSQL",
+      "AWS",
+      "Realização de testes",
+      "Microsserviços",
+      "gRPC",
+    ],
+    link: "https://www.tecsus.com.br",
+    type: "professional",
+    periods: [
+      {
+        role: "Estagiário em Desenvolvimento de Software",
+        start: "Novembro de 2024",
+        end: "Agosto de 2025",
+      },
+      { role: "Desenvolvedor de Software Júnior", start: "Agosto de 2025" },
+    ],
   },
 ]
 
